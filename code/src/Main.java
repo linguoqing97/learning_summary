@@ -55,9 +55,31 @@ public class Main {
         System.out.println(list.toString());
         System.out.println(list.size());*/
 
-        LC1128等价多米诺骨牌 lc1128 = new LC1128等价多米诺骨牌();
+        /*LC1128等价多米诺骨牌 lc1128 = new LC1128等价多米诺骨牌();
         int[][] A = {{1,2},{2,1},{1,2},{2,1}};
         int i = lc1128.numEquivDominoPairs(A);
-        System.out.println(i);
+        System.out.println(i);*/
+
+        /*int a ;
+        int b = 4 ;
+        a = b++ ;
+        System.out.println(a );
+        b=4;
+        a = ++b + b++;
+        System.out.println(a );
+        b=4;
+        a = b*10 + ++b + b++;
+        System.out.println(a );
+        b=4;
+        a = ++b + ++b + ++b;
+        System.out.println(a );
+        b=4;
+        a = b++ + b++ + b++;
+        System.out.println(a );*/
+
+        LC34 lc34 = new LC34();
+        int[] ints = new int[]{5,7,7,8,8,10};
+        int target = 8;
+        System.out.println(lc34.searchRange(ints, target).toString());
     }
 }
