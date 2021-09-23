@@ -77,9 +77,20 @@ public class Main {
         a = b++ + b++ + b++;
         System.out.println(a );*/
 
-        LC34 lc34 = new LC34();
+        /*LC34 lc34 = new LC34();
         int[] ints = new int[]{5,7,7,8,8,10};
         int target = 8;
-        System.out.println(lc34.searchRange(ints, target).toString());
+        System.out.println(lc34.searchRange(ints, target).toString());*/
+
+        输出书架 objects = new 输出书架();
+        int n = 5;
+        int[] a = new int[]{1,2,3,4,5};
+        int m = 5;
+        int[] b = new int[]{2,6,9,10,11};
+        int[] ints = objects.outputNumber(n, a, m, b);
+        for (int i = 0; i < m; i++) {
+            System.out.println(ints[i]);
+        }
+
     }
 }
