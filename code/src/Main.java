@@ -91,6 +91,5 @@ public class Main {
         for (int i = 0; i < m; i++) {
             System.out.println(ints[i]);
         }
-
     }
 }
