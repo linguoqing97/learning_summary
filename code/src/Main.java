@@ -1,6 +1,11 @@
+import util.FileUtil;
+
+import java.io.File;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
+import java.util.Map;
 
 public class Main {
     public static void main(String[] args) {
@@ -82,7 +87,7 @@ public class Main {
         int target = 8;
         System.out.println(lc34.searchRange(ints, target).toString());*/
 
-        输出书架 objects = new 输出书架();
+        /*输出书架 objects = new 输出书架();
         int n = 5;
         int[] a = new int[]{1,2,3,4,5};
         int m = 5;
@@ -90,6 +95,21 @@ public class Main {
         int[] ints = objects.outputNumber(n, a, m, b);
         for (int i = 0; i < m; i++) {
             System.out.println(ints[i]);
+        }*/
+
+        /** 处理文件 **/
+        File file = new File("D:\\work\\learning_summary\\code\\src\\dealData");
+        try {
+            Map<String, Integer> si = FileUtil.readFile(file);
+            int cout = 0;
+            for (String s : si.keySet()) {
+                cout++;
+                System.out.print(s+",");
+            }
+            System.out.println(" ");
+            System.out.println(cout);
+        } catch (IOException e) {
+            e.printStackTrace();
         }
     }
 }
